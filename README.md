@@ -1,6 +1,7 @@
 # news-aggregator
 
-run npm install
+npm install
+
 node app.js
 
 running on port 3000

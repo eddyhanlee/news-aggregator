@@ -16,7 +16,7 @@ async function scrapePage(source, url, parser) {
 async function getHtmlFromUrl(url) {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.setDefaultNavigationTimeout(0);
+  page.setDefaultNavigationTimeout(0);
   await page.goto(url);
   const html = await page.content();
   browser.close();
